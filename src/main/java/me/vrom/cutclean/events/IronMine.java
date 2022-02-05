@@ -24,7 +24,6 @@ public class IronMine implements Listener {
             if (e.getPlayer().getInventory().getItemInHand().getEnchantments().containsKey(Enchantment.LOOT_BONUS_BLOCKS)) {
                 //Check if the player has permission cutclean.ironmine
                 if (e.getPlayer().hasPermission("cutclean.ironmine")) {
-
                     int enchantmentLevel = e.getPlayer().getInventory().getItemInHand().getEnchantmentLevel(Enchantment.LOOT_BONUS_BLOCKS);
 
                     if (enchantmentLevel <= 3) {
@@ -32,7 +31,6 @@ public class IronMine implements Listener {
                     } else {
                         e.getBlock().getWorld().dropItemNaturally(e.getBlock().getLocation(), new ItemStack(Material.IRON_INGOT, plugin.getConfig().getInt("iron.4")));
                     }
-
                 }
             } else {
                 e.getBlock().getWorld().dropItemNaturally(e.getBlock().getLocation(), new ItemStack(Material.IRON_INGOT, plugin.getConfig().getInt("iron.normal")));
