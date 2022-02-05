@@ -1,0 +1,21 @@
+#Thank you for using cutclean <3 by Vrom
+
+#Normal means without any fortune
+#1 means with fortune 1
+#2 means with fortune 2
+#3 means with fortune 3
+#4 means with fortune above 3
+
+
+iron:
+  normal: 1
+  1: 2
+  2: 3
+  3: 4
+  4: 5
+gold:
+  normal: 1
+  1: 2
+  2: 3
+  3: 4
+  4: 5

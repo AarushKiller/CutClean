@@ -1,0 +1,6 @@
+name: CutClean
+version: '${project.version}'
+main: me.vrom.cutclean.CutClean
+api-version: 1.18
+authors: [ Vrom ]
+description: Cut Clean
