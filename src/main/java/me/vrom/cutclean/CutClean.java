@@ -26,8 +26,8 @@ public final class CutClean extends JavaPlugin {
 
     public void registerEvents() {
         PluginManager pm  = this.getServer().getPluginManager();
-        pm.registerEvents(new IronMine() , this);
-        pm.registerEvents(new GoldMine() , this);
+        pm.registerEvents(new IronMine(this) , this);
+        pm.registerEvents(new GoldMine(this) , this);
     }
 
     public void loadConfig(){

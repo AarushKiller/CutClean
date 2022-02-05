@@ -7,7 +7,12 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.Plugin;
 
 public class IronMine implements Listener {
-    private Plugin plugin = CutClean.getPlugin(CutClean.class);
+    
+    private CutClean plugin;
+    public IronMine(CutClean instance) {
+        this.plugin = instance;
+    }
+
     @EventHandler
     public void onBreak(org.bukkit.event.block.BlockBreakEvent e) {
         if (e.getBlock().getType().equals(org.bukkit.Material.IRON_ORE)) {
